@@ -20,7 +20,7 @@ const SignInScreen = ({navigation}) => {
     window.alert("sign in");
   }
   const onSignInApple =() => {
-    window.alert("sign in");
+    console.warn("sign in");
   }
   const onSignUpPressed =() => {
     navigation.navigate('SignUp');
@@ -60,13 +60,13 @@ const SignInScreen = ({navigation}) => {
      fgColor="#4765A9"
      />
      <CustomButton
-     text="sign In"
+     text="sign In with Google"
      onPress={onSignInGoogle}
      bgColor="#FAE9EA"
      fgColor="#DD4D44"
      />
      <CustomButton
-     text="sign In"
+     text="sign In with Apple"
      onPress={onSignInApple}
      bgColor="#e3e3e3"
      fgColor="#363636"
