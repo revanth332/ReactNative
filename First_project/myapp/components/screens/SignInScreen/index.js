@@ -8,7 +8,8 @@ const SignInScreen = ({navigation}) => {
   const [username,setUsername] = useState('');
   const [password,setPassword] = useState('');
   const onSignInPressed =() => {
-    window.alert("Sign in");
+    // window.alert("Sign in");
+    navigation.navigate('Profile');
   }
   const onForgotPressed =() => {
     navigation.navigate('ForgotPassword');
